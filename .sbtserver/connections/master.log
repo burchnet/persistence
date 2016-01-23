@@ -1,0 +1,7 @@
+New log file opened at Sat Jan 23 16:30:51 EST 2016 by 44419@cliffs-mbp
+Taking next connection to: 52562
+New client attempting to connect on port: 52563-52562
+  Address = /172.16.1.53:52562
+This client on port 52563 has uuid 70625cf5-e554-4e2f-ad26-f53ddb648fb8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-70625cf5-e554-4e2f-ad26-f53ddb648fb8
+Taking next connection to: 52562
