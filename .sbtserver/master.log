@@ -2500,3 +2500,93 @@ Set current project to hello-scala (in build file:/Users/cburchfield/Documents/c
 Reapplying settings...
 Set current project to hello-scala (in build file:/Users/cburchfield/Documents/cookbook/persistence/)
 > iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/Users/cburchfield/Documents/cookbook/persistence/}persistence/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f240b1a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jan 23, 2016 4:31:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/cburchfield/Documents/cookbook/persistence/}persistence/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@3eb57843, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jan 23, 2016 4:31:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/cburchfield/Documents/cookbook/persistence/}persistence/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@4cb48371, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jan 23, 2016 4:31:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/cburchfield/Documents/cookbook/persistence/}persistence/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@37c9328d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jan 23, 2016 4:31:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

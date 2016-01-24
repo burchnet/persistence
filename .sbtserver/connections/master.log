@@ -5,3 +5,9 @@ New client attempting to connect on port: 52563-52562
 This client on port 52563 has uuid 70625cf5-e554-4e2f-ad26-f53ddb648fb8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
 Connected Clients: activator-70625cf5-e554-4e2f-ad26-f53ddb648fb8
 Taking next connection to: 52562
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 52562
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 52562
