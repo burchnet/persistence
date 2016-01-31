@@ -8,8 +8,6 @@ abstract class MongoModel[IDType](id: ID[IDType]) extends Model[IDType, Long](id
 
 case class IDLike[IDType, I](i: I)
 
-object IDLike
-{
-
+object IDLike {
     type ID[IDType] = IDLike[IDType, Long]
 }

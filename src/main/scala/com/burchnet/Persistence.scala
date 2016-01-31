@@ -3,8 +3,8 @@ package com.burchnet
 import cats.free.Free.liftF
 import com.burchnet.PersistenceInterpreter._
 
-object Persistence
-{
+object Persistence {
+
     def findOne(dBQuery: DBQuery, auth: Authorization): DBCommand[Option[Model[_, _]]] =
         liftF(FindOne(dBQuery, auth, (identity _)))
 

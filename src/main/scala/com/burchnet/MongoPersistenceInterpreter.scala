@@ -1,7 +1,6 @@
 package com.burchnet
 
-abstract class MongoPersistenceInterpreter[M <: MongoModel[M]] extends PersistenceInterpreter[M, Long]
-{
+abstract class MongoPersistenceInterpreter[M <: MongoModel[M]] extends PersistenceInterpreter[M, Long] {
 
     protected def findOne(dbQuery: DBQuery, authorization: Authorization): Option[M] = None
 

@@ -50,12 +50,9 @@ object PersistenceInterpreter {
     sealed case class Create[Next](m: Model[_, _], auth: Authorization,
                                    result: Either[Error, Model[_, _]] => Next) extends Command[Next]
 
-    implicit val persistenceFunctor = new Functor[Command]
-    {
-        override def map[A, B](command: Command[A])(f: (A) => B): Command[B] =
-        {
-            command match
-            {
+    implicit val persistenceFunctor = new Functor[Command] {
+        override def map[A, B](command: Command[A])(f: (A) => B): Command[B] = {
+            command match  {
                 case FindOne(dBQuery, auth, onResult) => FindOne(dBQuery, auth, onResult andThen f)
                 case FindAll(dBQuery, auth, onResult) => FindAll(dBQuery, auth, onResult andThen f)
                 case Delete(dBQuery, auth, onResult) => Delete(dBQuery, auth, onResult andThen f)
