@@ -4,9 +4,7 @@ import cats.free.Free
 import cats.{Functor, Id, ~>}
 import com.burchnet.PersistenceInterpreter._
 
-trait PersistenceInterpreter[M <: Model[M, I], I] extends (Command ~> cats.Id)
-{
-
+trait PersistenceInterpreter[M <: Model[M, I], I] extends (Command ~> cats.Id){
 
     override def apply[A](service: Command[A]): Id[A] =
     {
@@ -31,8 +29,8 @@ trait PersistenceInterpreter[M <: Model[M, I], I] extends (Command ~> cats.Id)
     protected def create(model: M, authorization: Authorization): Either[Error, M]
 }
 
-object PersistenceInterpreter
-{
+object PersistenceInterpreter {
+    
     type DBCommand[Result] = Free[Command, Result]
 
     sealed trait Command[Next]
@@ -51,11 +49,6 @@ object PersistenceInterpreter
 
     sealed case class Create[Next](m: Model[_, _], auth: Authorization,
                                    result: Either[Error, Model[_, _]] => Next) extends Command[Next]
-
-    /*sealed case class Validate[Next](m: Model[_, _], auth: Authorization,
-                                     validation: Model[_, _] => Either[Error, Model[_, _]],
-                                     result: Either[Error, Model[_, _]] => Next) extends Command[Next]
-    sealed case class Logic[Next](m: Model[_, _], auth: Authorization, result: Model => Next) extends Command[Next]*/
 
     implicit val persistenceFunctor = new Functor[Command]
     {
