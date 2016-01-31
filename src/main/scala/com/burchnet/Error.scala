@@ -6,5 +6,6 @@ case class NotImplemented() extends Error("Not implemented", 500)
 
 object Error
 {
-	val notImplemented = NotImplemented()
+
+    val notImplemented = NotImplemented()
 }

@@ -11,13 +11,15 @@ val springDataMongo = Seq("org.mongodb" % "mongo-java-driver" % "2.6",
         "org.springframework" % "spring-context" % "3.0.5.RELEASE",
         "org.springframework.data" % "spring-data-mongodb" % "1.0.0.M4")
 
+val cats = Seq("org.spire-math" %% "cats" % "0.2.0")
+
 val reactiveMongo = Seq("org.reactivemongo" %% "reactivemongo" % "0.11.9")
 
-val scalaz = Seq("org.scalaz" %% "scalaz-core" % "7.2.0")
+//val scalaz = Seq("org.scalaz" %% "scalaz-core" % "7.2.0")
 
 val scalaTest = Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test")
 
-libraryDependencies ++= scalaTest ++ springDataMongo ++ scalaz
+libraryDependencies ++= scalaTest ++ springDataMongo ++ cats
 
 
 

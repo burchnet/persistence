@@ -1,10 +1,15 @@
 package com.burchnet
 
-import org.springframework.data.annotation.Id
-import beans.BeanProperty
+import com.burchnet.IDLike._
 
-abstract class Model[IDType](@Id @BeanProperty id: ID[IDType])
+abstract class Model[IDType, I](id: IDLike[IDType, I])
 
-abstract class MongoModel[IDType](@Id @BeanProperty id: ID[IDType]) extends Model[IDType](id)
+abstract class MongoModel[IDType](id: ID[IDType]) extends Model[IDType, Long](id)
 
-case class ID[IDType](i: IDType)
+case class IDLike[IDType, I](i: I)
+
+object IDLike
+{
+
+    type ID[IDType] = IDLike[IDType, Long]
+}
